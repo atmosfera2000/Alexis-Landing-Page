@@ -1,0 +1,27 @@
+// Set fonts
+@mixin font-face($fontFamily, $fontPath, $fileName, $fontWeight) {
+    @font-face {
+        font-family: $fontFamily;        
+        src: 
+            url('#{$fontPath}/#{$fileName}.ttf') format('truetype');
+        font-weight: $fontWeight;        
+    }
+}
+
+// Set border-bottom color
+@mixin bottom-color {    
+    @each $key, $color in $custom-colors {
+        &--#{$key} {
+            border-bottom: 3px solid $color;
+        }
+    }    
+}
+
+// Set font-color 
+@mixin font-color {
+    @each $key, $color in $custom-colors {
+        &--#{$key} {
+            color: $color;
+        }
+    }
+}

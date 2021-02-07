@@ -1,0 +1,87 @@
+/* 
+  The navbar position is pulled from the normal flow of the DOM.
+  This is a js computed navbar height according to the navbar paddings and font size.
+  it is used for body padding-top settings in order to insert the navbar at the top. 
+*/
+$navbar-height: 5.09791875rem;
+
+// Set custom colors
+$black:   #000000;
+$dark:    #272727;
+$white:   #ffffff;
+$light:   #f7f7f7;
+$orange:  #fc5f45;
+$green:   #38c695;
+$pink:    #b27cf5;
+$yellow:  #feb960;
+$gray:    #616161;
+
+// Set a custom colors map (font color, border bottom color)
+$custom-colors: (
+  "white":    $white,
+  "green":    $green,
+  "pink":     $pink,
+  "orange":   $orange,
+  "yellow":   $yellow
+);
+
+// Set typography vars
+$h2-font-wight:     700; 
+$p-line-height:     1.8;
+
+/*----------  Override Bootstrap variables  ----------*/
+
+$theme-colors: (
+  "orange": $orange
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$font-size-base:              1rem; 
+$font-size-lg:                $font-size-base * 1.125;
+$font-size-sm:                $font-size-base * .875;
+$font-weight-reqular:         400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+
+$font-family-sans-serif:
+  // Set Theme font family
+  "Poppins",
+  // Bootstrap “native font stack”
+  -apple-system,  
+  BlinkMacSystemFont,  
+  "Segoe UI", 
+  Roboto,  
+  "Helvetica Neue", Arial, 
+  "Noto Sans", 
+  sans-serif,  
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+$headings-font-family:
+  // Set Theme font family
+  "Libre Baskerville",
+  // Bootstrap “native font stack”
+  -apple-system,  
+  BlinkMacSystemFont,  
+  "Segoe UI", 
+  Roboto,  
+  "Helvetica Neue", Arial, 
+  "Noto Sans", 
+  sans-serif,  
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+$h1-font-size:            $font-size-base * 3.75; 
+$headings-line-height:    1.417;
+   
+// Override link color for .navbar-light class
+$navbar-light-color:  $dark;
+
+

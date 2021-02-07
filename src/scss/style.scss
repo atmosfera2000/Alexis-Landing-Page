@@ -1,0 +1,23 @@
+// Import variables (overrides Bootstrap defaults)
+@import "variables";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Import custom style
+@import "icons";
+@import "mixins";
+@import "global";
+@import "navbar";
+@import "header";
+@import "section-about";
+@import "section-focus";
+@import "section-portfolio";
+@import "section-team";
+@import "footer";
+
+
+
+
+
+
