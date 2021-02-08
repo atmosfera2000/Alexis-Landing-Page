@@ -12,7 +12,7 @@ section#about {
     } 
 
     .img-info {
-        padding: 5.5rem 4rem 5.5rem 4rem;
+        padding: 5.5rem 1rem;
         background-color: $white;
         box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.05);
         background-image: url(../assets/img/img-info-bg.jpg);
@@ -23,6 +23,13 @@ section#about {
 
 }
 
+@include media-breakpoint-up(md) {
+    section#about {
+        .img-info {
+            padding: 5.5rem 4rem 5.5rem 4rem;
+        }
+    }
+}
 
 @include media-breakpoint-up(lg) {
 
